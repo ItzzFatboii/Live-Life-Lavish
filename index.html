@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>LIVE. LIFE. LAVISH — MOVE IN SILENCE</title>
+<meta name="description" content="LIVE. LIFE. LAVISH — independent UK streetwear. Move in silence. Live in luxury.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="announcement">LIVE. LIFE. LAVISH <span>·</span> MOVE IN SILENCE <span>·</span> EST. 2023</div>
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="LIVE. LIFE. LAVISH home">LIVE. LIFE. <strong>LAVISH.</strong></a>
+  <nav>
+    <a href="#collection">Collection</a>
+    <a href="#story">The brand</a>
+    <a href="#order">Order</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="hero-banner.jpeg" alt="LIVE. LIFE. LAVISH editorial campaign">
+  <div class="hero-shade"></div>
+  <div class="hero-content">
+    <p class="eyebrow">INDEPENDENT UK LABEL · EST. 2023</p>
+    <h1>MOVE IN<br><em>SILENCE.</em></h1>
+    <p class="hero-sub">Live in luxury.</p>
+    <a class="button button-light" href="#collection">Explore the collection <span>↓</span></a>
+  </div>
+  <div class="hero-bottom"><span>WOLVERHAMPTON · UK</span><span>SCROLL TO EXPLORE ↓</span></div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div>LIVE. LIFE. LAVISH <b>///</b> MOVE IN SILENCE <b>///</b> LIVE IN LUXURY <b>///</b> EST. 2023 <b>///</b> LIVE. LIFE. LAVISH <b>///</b> MOVE IN SILENCE <b>///</b></div></div>
+
+<section id="story" class="manifesto section-pad">
+  <div class="section-number">01 — THE BRAND</div>
+  <div class="manifesto-grid">
+    <h2>A HIGHER<br><span>STANDARD.</span></h2>
+    <div class="manifesto-copy">
+      <p>Built with purpose. Worn with intent.</p>
+      <p>LIVE. LIFE. LAVISH is an independent UK label built around quiet confidence, statement design and limited runs.</p>
+      <div class="rule"></div>
+      <p class="micro">NO ANNOUNCEMENTS. NO EXPLANATIONS. JUST THE WORK.</p>
+    </div>
+  </div>
+</section>
+
+<section id="collection" class="collection section-pad">
+  <div class="section-top"><div><div class="section-number">02 — CURRENT COLLECTION</div><h2>THE PIECES.</h2></div><p>Small batches<br>Direct orders</p></div>
+  <div id="product-area">
+    <div class="product-empty">
+      <div class="product-empty-number">COLLECTION UPDATE</div>
+      <h3>PRODUCT IMAGERY<br><em>IS BEING UPDATED.</em></h3>
+      <p>The next pieces will appear here as soon as the final product photography is ready.</p>
+    </div>
+  </div>
+</section>
+
+<section class="feature-image"><img src="car-editorial.jpeg" alt="LIVE. LIFE. LAVISH automotive editorial"><div><span>BUILT DIFFERENT.</span><span>STAY QUIET.</span></div></section>
+
+<section class="statement section-pad">
+  <div class="section-number">03 — THE MINDSET</div>
+  <div class="statement-grid"><h2>MORE THAN<br>A BRAND.<br><span>A MINDSET.</span></h2><p>Discipline. Patience. Progress. Freedom.<br><br>The life you want isn't given. It's built. Keep building. Keep quiet. Let the results speak for themselves.</p></div>
+  <div class="principles"><span>01 DISCIPLINE</span><span>02 PATIENCE</span><span>03 PROGRESS</span><span>04 FREEDOM</span></div>
+</section>
+
+<section class="editorial-full"><img src="street-editorial.jpeg" alt="LIVE. LIFE. LAVISH streetwear editorial"><div class="editorial-overlay"><div class="section-number">04 — THE STATEMENT</div><h2>NOBODY NEEDS<br>TO KNOW WHAT<br><em>YOU'RE BUILDING.</em></h2><p>MOVE IN SILENCE · LIVE IN LUXURY</p></div></section>
+
+<section id="order" class="order section-pad">
+  <div class="section-number">05 — ORDER DIRECT</div>
+  <div class="order-grid">
+    <h2>YOUR PIECE.<br><span>YOUR WAY.</span></h2>
+    <div class="order-copy"><p>We're keeping orders personal while the brand grows. Send the item, size and quantity through Instagram or Facebook and we'll confirm availability and delivery or collection.</p><div class="order-buttons"><a id="instagram-order" class="button" href="https://ig.me/m/live.life.lavish_official" target="_blank" rel="noopener">Message on Instagram ↗</a><a id="facebook-order" class="button button-light" href="https://www.facebook.com/share/1EuvQwDr7g/?mibextid=wwXIfr" target="_blank" rel="noopener">Message on Facebook ↗</a></div></div>
+  </div>
+</section>
+
+<section class="closing"><img src="wordmark.png" alt="LIVE. LIFE. LAVISH wordmark"><p>MOVE IN SILENCE.</p></section>
+</main>
+
+<footer class="footer"><div class="footer-top"><img src="logo.png" alt="LIVE. LIFE. LAVISH logo"><div><a id="instagram-footer" href="https://ig.me/m/live.life.lavish_official" target="_blank" rel="noopener">Message on Instagram ↗</a><a id="facebook-footer" href="https://www.facebook.com/share/1EuvQwDr7g/?mibextid=wwXIfr" target="_blank" rel="noopener">Message on Facebook ↗</a></div></div><div class="footer-bottom"><span>LIVE. LIFE. LAVISH · EST. 2023</span><span>UK · MOVE IN SILENCE</span></div></footer>
+
+<script src="site-config.js"></script>
+<script src="products.js"></script>
+<script>
+(function(){
+  const cfg = window.LAVISH_CONFIG || {};
+  const products = Array.isArray(window.LAVISH_PRODUCTS) ? window.LAVISH_PRODUCTS : [];
+  if (cfg.instagram) document.querySelectorAll('[id*="instagram"]').forEach(a => a.href = cfg.instagram);
+  if (cfg.facebook) document.querySelectorAll('[id*="facebook"]').forEach(a => a.href = cfg.facebook);
+  if (!products.length) return;
+  const area = document.getElementById('product-area');
+  area.innerHTML = '<div class="product-grid" id="product-grid"></div>';
+  const grid = document.getElementById('product-grid');
+  products.forEach((p, i) => {
+    const article = document.createElement('article');
+    article.className = 'product' + (i === 0 ? ' product-main' : '');
+    article.innerHTML = '<a href="#order"><div class="image-wrap"><img loading="lazy" src="' + p.image + '" alt="' + (p.name || 'LIVE. LIFE. LAVISH product') + '"><span class="product-tag">' + (p.tag || 'AVAILABLE') + '</span></div></a><div class="product-meta"><div><span class="product-type">' + (p.type || 'COLLECTION') + '</span><h3>' + (p.name || '') + '</h3><p>' + (p.description || '') + '</p></div></div>';
+    grid.appendChild(article);
+  });
+})();
+</script>
+</body>
+</html>
